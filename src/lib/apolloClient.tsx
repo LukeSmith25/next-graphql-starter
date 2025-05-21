@@ -1,7 +1,7 @@
 // lib/apolloClient.ts
-import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client';
+import { ApolloClient, InMemoryCache, HttpLink, NormalizedCacheObject } from '@apollo/client';
 
-let client: ApolloClient<any> | null = null;
+let client: ApolloClient<NormalizedCacheObject> | null = null;
 
 export function getApolloClient() {
   if (client) return client;

@@ -1,7 +1,8 @@
 // CourseCard.tsx
 import Link from "next/link";
+import { Course } from "@/types/graphql";
 
-export default function CourseCard({ course }: { course: never }) {
+export default function CourseCard({ course }: { course: Course }) {
   return (
     <Link
       className="bg-gray-100 border-2 border-gray-200 p-4 rounded-md"
